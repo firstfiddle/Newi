@@ -50,7 +50,7 @@ router.get('/stripeapiKey', PaymentController.sendStripeApiKey)
 //OrderController
 router.post('/order/create',ChangeUserAuth, OrderController.newOrder)
 router.get('/order/getSingleOrder/:id',ChangeUserAuth, OrderController.getSingleOrder)
-router.get('/order/myOrder',ChangeUserAuth, OrderController.myOrder)
+router.get('/order/myOrder', OrderController.myOrder)
 router.get('/order/getAllOrders',ChangeUserAuth, OrderController.getAllOrders)
 router.get('/order/deleteOrder/:id', ChangeUserAuth,OrderController.deleteOrder)
 module.exports = router
